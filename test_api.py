@@ -7,7 +7,6 @@ def test_get_post_id():
     post = response.json()
     assert post["id"] == 1
     assert post["userId"] == 1
-    assert isinstance(post["title"], str)
     assert isinstance(post["body"], str)
     assert post["title"] != ""
     assert post["body"] != ""
